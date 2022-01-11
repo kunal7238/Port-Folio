@@ -14,7 +14,7 @@ const Project = () => {
   useEffect(() => {
     const newData = data.filter((each) => each.name === path);
     setproject(newData[0]);
-  }, []);
+  }, [path]);
 
   return (
     <>

@@ -1,6 +1,6 @@
 import React from 'react'
-import { VscGithub } from 'react-icons/vsc';
-import {HiOutlineExternalLink} from 'react-icons/hi'
+// import { VscGithub } from 'react-icons/vsc';
+// import {HiOutlineExternalLink} from 'react-icons/hi'
  
 function Card({
     name, desc, github, live
