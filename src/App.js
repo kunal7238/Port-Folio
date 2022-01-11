@@ -1,24 +1,46 @@
-import logo from './logo.svg';
+
 import './App.css';
+import LandingPage from './Pages/LandingPage';
+import Explore from './Pages/Explore';
+import {BrowserRouter, Route} from 'react-router-dom';
+import Work from './Pages/Work';
+import ProjectPage from './Pages/ProjectPage';
+import Project from './component/Project';
+import { data } from './assets/data';
+import Contact from './Pages/Contact';
+
+
 
 function App() {
+
+  const names = [];
+
+  data.forEach((each)=>{
+    names.push("/"+each.name);
+  });
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+    <Route path="/" exact> 
+      <LandingPage/>
+    </Route>
+    <Route path="/explore" exact>
+      <Explore/>
+    </Route>
+    <Route path="/work" exact>
+      <Work/>
+    </Route>
+    <Route path="/project">
+      <ProjectPage/>
+    </Route>
+    <Route path={names} exact>
+    <Project/>
+    </Route>
+    <Route path="/contact">
+      <Contact/>
+    </Route>
+    </BrowserRouter>
   );
 }
 
