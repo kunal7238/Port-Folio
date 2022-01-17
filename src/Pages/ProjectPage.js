@@ -9,10 +9,10 @@ import {Link} from 'react-router-dom';
 
 function ProjectPage() {
     return (
-        <div className="bg-primary">
+        <div className="bg-primary h-screen">
             <Header/>
             {/* <Project/> */}
-            <div className="bg-primary">
+            <div className="bg-primary ">
             <h1 className="font-bold text-5xl text-center text-white pt-16 ">Something that he has build</h1>
         <p className="mt-4 text-purple-200 text-center text-lg font-light">
         with love, expertise and pinch of magical ingredients

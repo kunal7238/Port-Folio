@@ -60,7 +60,7 @@ const Project = () => {
             <h1 className="font-bold text-6xl text-center text-white mb-5 ">
               Let's talk about the project
             </h1>
-            <p className="text-center"> 
+            <p className="text-center text-blue-200"> 
               conneKt helps the alumni strengthen their relationships in the
               alma mater. It is an web based platform for students to get to
               know people around their college,connect with alumni, raise
